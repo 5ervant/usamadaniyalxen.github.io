@@ -1,0 +1,410 @@
+/* ==============================================================
+
+   Author: UDX
+   Author URL: http://themeforest.net/user/UDX
+   Template: Glamour - Barbie's Fashion Stylist
+   Template URL: #
+   Version: 1.0
+
+   ============================================================== */
+/*
+This css file includes all base styles and template's main color (in this tempalte main color is (#be922a)). 
+Template's main color styles located at the bottom of this file.
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,
+	ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after {
+	content: '';
+	content: none;
+}
+img{
+	vertical-align:middle;
+	max-width:100%;
+}
+iframe{
+	max-width:100%;
+}
+del {
+	text-decoration: line-through;
+}
+a, a > *, i{
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+	border:none;
+}
+a:hover{text-decoration:none;}
+h1, h2, h3, h4, h5, h6{
+	font-weight:700;
+	color:#333;
+	margin-bottom:20px;
+}
+h1 { font-size: 45px; }
+h2 { font-size: 36px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+table{
+	width:100%;
+	max-width:100%;
+	text-align:left;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom:15px;
+	color:#888;
+	border:1px solid #ebebeb;
+}
+table tr{
+	border:1px solid #ebebeb;
+}
+table th{
+	vertical-align:top;
+	color:#444;
+	background:none;
+	font-size:16px;
+	font-weight:normal;
+	padding:15px 10px;
+}
+table td{
+	vertical-align:top;
+	padding:10px;
+}
+
+blockquote{
+	font-style:italic;
+	color:#888;
+	text-align:left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	min-height:40px;
+	margin:30px;
+	font-size:28px!important;
+	line-height:1.3!important;
+}
+blockquote p{
+	font-size:28px!important; 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	line-height:1.3!important;
+	margin-bottom:0px !important;
+}
+blockquote cite{
+	margin-top:20px;
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+code, pre {
+	padding: 10px;
+	padding-bottom: 0;
+	border-left: 3px solid #6FBF71;
+	border-bottom: 1px solid transparent;
+	background: #f7f7f7;
+	overflow-x:scroll;
+}
+
+pre{
+	display: block;	
+	word-break: break-all;
+	word-wrap: break-word;
+}
+pre code { white-space: pre-wrap; }
+
+a.button{
+	padding:14px 20px;
+	text-transform:uppercase;
+	font-size:13px;
+	color:#fff;
+	font-weight:600;
+	display:inline-block;
+	text-decoration:none;
+}
+a.button:hover{
+	opacity:0.8;
+}
+a.button.radius{
+	border-radius:2px;
+}
+a.button.blue{ background:#36C; }
+a.button.green{ background:#390; }
+a.button.red{ background:#C03; }
+a.button.yellow{ background:#F7C709; }
+
+a.button.small{
+	padding:8px 20px;
+	font-size:11px;
+}
+
+.xx_tabs ul.etabs{
+	list-style-type:none;
+}
+.xx_tabs ul.etabs.center{
+	text-align:center;
+}
+.xx_tabs ul.etabs li{
+	display:inline-block;
+	margin-right:-2px;
+}
+.xx_tabs ul.etabs li a{
+	text-decoration:none;
+	font-size:13px;
+	text-transform:uppercase;
+	color:#333;
+	font-weight:600;
+	background:#eee;
+	display:block;
+	padding:10px 20px;
+	border:1px solid #eee;
+	margin-bottom:-1px;
+}
+.xx_tabs ul.etabs li a.active{
+	background:none;
+	border-bottom-color:#fff;
+	
+}
+.xx_tabs .tabcontent{
+	display:block;
+	padding:30px;
+	border:1px solid #eee;
+	background:#fff;
+}
+/*dark tabs*/
+.xx_tabs.dark ul.etabs li a{
+	background:#333;
+	color:#fff;
+	border:none;
+}
+.xx_tabs.dark ul.etabs li a.active{
+	background:#000;
+}
+.xx_tabs.dark .tabcontent{
+	border:none;
+	background:#000;
+	color:#FFF;
+}
+.xx_margin{
+	margin-bottom:50px;
+	display:block;
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+a.modal_button{
+	padding:14px 20px;
+	text-transform:uppercase;
+	font-size:13px;
+	color:#fff;
+	font-weight:600;
+	display:inline-block;
+	text-decoration:none;
+}
+a.modal_button:hover{
+	opacity:0.8;
+}
+.mb_popup{
+	width:500px;
+	padding:50px;
+	height:auto;
+	background:#fff;
+	position:relative;
+	margin:0px auto;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	-ms-box-sizing: border-box;     /* IE 10 + */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.mb_popup p{
+	margin-bottom:30px;
+}
+.mb_popup a.button{
+	margin-bottom:3px;
+}
+/*------------------------------------------------------------------*/ 
+/*	x) FORM ELEMENTS
+/*------------------------------------------------------------------*/
+textarea{
+	border-radius:0;
+	font-size:13px;
+	color:#333;
+	resize:vertical;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	-ms-box-sizing: border-box;     /* IE 10 + */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	line-height:1.4;
+	padding:10px!important;
+	width:100%;
+	border:2px solid #f1f1f1;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border-radius:0;
+	font-size:13px;
+	min-width:220px;
+	color:#333;
+	letter-spacing:0.5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	-ms-box-sizing: border-box;     /* IE 10 + */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	line-height:1;
+	padding:10px!important;
+	height:40px;
+	vertical-align:middle;
+	border:2px solid #f1f1f1;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+	
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border-color:#ddd;
+}
+
+
+input[type="submit"], input[type="button"]{
+	padding: 13px 15px;
+	height: 40px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	border:none;
+	cursor:pointer;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+input[type="submit"]:hover, input[type="button"]:hover{
+	opacity:0.8;
+}
+select{
+	padding:8px;
+	border:2px solid #eee;
+}
+
+
+
+
+
+/*------------------------------------------------------------------*/ 
+/*	x) TEMPLATE COLORS
+/*------------------------------------------------------------------*/
+nav.navigation ul li a:hover,
+nav.navigation > ul > li.sfHover > a,
+.address_button:hover i,
+.main_slider .infobox h4 span,
+.serviceIntro ul.etabs li a.active,
+.footer p.copyright a,
+.footer ul.social li a:hover i,
+.extra_data > div > i,
+.breadcrumbs p a:hover,
+.services ul.items li a:hover,
+.filter .item_counter span.count,
+.services ul.service-list li a:hover,
+.service_details ul.share li a:hover i,
+ul.brochures li a:hover i,
+.contact div.xx_di > i,
+a{
+	color:#be922a;
+}
+nav.navigation ul ul,
+.book_online .book_button,
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active,
+.serviceIntro a.read_more,
+.testimonials .owl-dots .owl-dot.active span,
+.testimonials .owl-dots .owl-dot.active:hover span,
+.xx_gallery .xx_control span,
+.footer p.copyright a:before,
+.footer .totop span,
+input[type="submit"], 
+input[type="button"],
+.ui-datepicker td a:hover,
+.opening_popup h3,
+.filter .item_counter,
+.filter .selector ul,
+nav.pagination ul li a.current,
+nav.pagination ul li a.current:hover,
+.service_cat nav ul li a.current,
+.service_cat nav ul li a.current:hover,
+.service_details a.book_button,
+.wid-title,
+ul.brochures li a:hover,
+.blog article a.read_more,
+a.button,
+a.modal_button{
+	background-color:#be922a;
+}
+nav.navigation > ul > li.sf-with-ul.sfHover > a:after,
+.serviceIntro ul.etabs li a.active:after{
+	border-top-color:#be922a;
+}
