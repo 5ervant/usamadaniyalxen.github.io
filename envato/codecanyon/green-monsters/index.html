@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=en> <head><meta charset=utf-8><link rel="shortcut icon" href=favicon.ico><!-- Meta --><meta name=description content><meta name=keywords content><meta name=author content=UDX><title>Green Monsters - Fighting Game</title><link rel=stylesheet href=css/styles.css type=text/css media=all><script type=text/javascript src=js/jquery.js></script><script type=text/javascript src=js/easing.js></script><script type=text/javascript src=js/crafty.js></script><script type=text/javascript src=js/game.js></script><script type=text/javascript src=js/jrumble.1.1.js></script></head> <body> <div id=cover><img src=images/loadingloop.gif alt> </div> <div> <audio id=audio_1 loop=loop> <source src=audio/greenmonsters-intro.ogg> <source src=audio/greenmonsters-intro.mp3> </audio> <audio id=audio_2 loop=loop> <source src=audio/greenmonsters-bg.ogg> <source src=audio/greenmonsters-bg.mp3> </audio> <audio id=audio_3 loop=loop> <source src=audio/final.ogg> <source src=audio/final.mp3> </audio> <audio id=swing1> <source src=audio/swing1.ogg> <source src=audio/swing1.mp3> </audio> <audio id=swing2> <source src=audio/swing2.ogg> <source src=audio/swing2.mp3> </audio> <audio id=hit1> <source src=audio/hit1.ogg> <source src=audio/hit1.mp3> </audio> <audio id=hit2> <source src=audio/hit2.ogg> <source src=audio/hit2.mp3> </audio> <audio id=beep> <source src=audio/skull1.ogg> <source src=audio/skull1.mp3> </audio> <audio id=monster> <source src=audio/monster.ogg> <source src=audio/monster.mp3> </audio> <script type=text/javascript>
+function play_sound(audioId) {
+    document.getElementById(audioId).play();
+    document.getElementById(audioId).currentTime = 0;
+    document.getElementById(audioId).volume = 0.6;
+}
+
+function play_music(audioId) {
+    document.getElementById(audioId).play();
+    document.getElementById(audioId).currentTime = 0;
+    document.getElementById(audioId).volume = 0.6;
+    document.getElementById(audioId).addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.pause();
+        document.getElementById(audioId).play();
+    }, false);
+}
+
+function resume_music(audioId) {
+    document.getElementById(audioId).volume = 0.6;
+    document.getElementById(audioId).play();
+}
+
+function stop_music(audioId) {
+    document.getElementById(audioId).pause();
+}
+        </script> <header> <div id=headercontent> <h1><a href=index.html><img src=images/gm-logo.png alt="Green Monsters"></a></h1> <h3>HTML 5 Game</h3> </div> </header> <article> <section id=gamearea> <div id=gameborder> <div id=cr-stage></div> </div> <hr> <div id=controlarea> <div id=startbutton></div> <div id=pausebutton></div> <div id=playagainbutton></div> <div id=quitbutton></div> </div> <div id=leftcredits> <a href=http://www.w3.org/TR/html5/><img src=images/html5.png alt="HTML 5"> </a> <h4>Tech In This Game:</h4> <p><a href=http://jquery.com/>jQuery</a> & <a href=http://www.craftyjs.com>Crafty Game Engine</a> </p> </div> <div id=rightcredits> <p>UDX © 2015. All Rights Reserved.</p> </div> </section> </article> <footer> Game created by <a href=http://codecanyon.net/user/UDX>UDX</a> for <a href=http://www.envato.com/>Envato Market</a>. </footer> </div> </body> </html>
