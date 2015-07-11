@@ -165,7 +165,7 @@
     function h(e, t) {
         return Math.floor(e / t) == e / t
     }
-
+    
     function m(e) {
         var t, o, n;
         return e *= v.pulseScale, 1 > e ? t = e - (1 - Math.exp(-e)) : (o = Math.exp(-1), e -= 1, n = 1 - Math.exp(-e), t = o + n * (1 - o)), t * v.pulseNormalize

@@ -3,7 +3,7 @@
    Author: UDX
    Author URL: http://themeforest.net/user/UDX
    Template: Audio Folio - One Page Music Template
-   Template URL: #
+   Template URL: http://themeforest.net/item/x/11994999
    Version: 1.0
 
    ============================================================== */
@@ -81,7 +81,7 @@ $(function() {
         var winHeight = $(window).innerHeight();
         $('html,body').animate({
             scrollTop: winHeight
-        }, 2000);
+        }, 750);
     });
     $('.contact').hide();
 
@@ -569,18 +569,3 @@ $(function() {
         }, 500);
     });
 });
-
-
-function backToHome() {
-    $('.popup').fadeOut(300);
-    $('.content_experience').animate({
-        opacity: 0
-    }, 1000);
-    setTimeout(function() {
-        $('.content_experience').hide().empty();
-        $('.main_content').show().animate({
-            opacity: 1
-        }, 1000);
-    }, 1000);
-
-}
