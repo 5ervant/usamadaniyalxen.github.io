@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.9">
+    <meta name="author" content="UDX">
+
+    <title>Parallax Runner - HTML5 Game</title>
+
+    <link rel="stylesheet" href="game.css" type="text/css" />
+
+    <script type="text/javascript" src="game.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="frame">
+            <div id="game"></div>
+        </div>
+        <!--
+    <a href="#" onclick="if (game.paused()) { game.start(); this.innerHTML = 'Pause'; } else { game.stop(); this.innerHTML = 'Continue'; }; return false;">Pause</a>
+-->
+        <span id="score"><center><h3>Best: 0m</h3></center></span>
+        <center><a id="go" href="#" onclick="game.start();game.initialize(); return false;">Restart</a>
+        </center>
+
+    </div>
+    
+    <script type="text/javascript">
+        if (!('ontouchstart' in window) || 1) document.body.style.paddingTop = "45px";
+        var game = new Canabalt(document.getElementById('game'), {
+            fps: 40
+        }).start();
+    </script>
+
+</body>
+
+</html>
