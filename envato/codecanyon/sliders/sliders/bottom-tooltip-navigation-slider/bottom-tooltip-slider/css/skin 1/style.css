@@ -1,0 +1,203 @@
+/* ==============================================================
+
+   Author: UDX
+   Author URL: http://codecanyon.net/user/UDX
+   Plugin: 23 Sliders - Mega Pack
+   Plugin URL: http://codecanyon.net/item/x/12482338
+   Version: 1.0
+
+   ============================================================== */
+
+.container {
+    display: block;
+    width: 910px;
+    margin: 0px auto;
+}
+#iview {
+    display: block;
+    width: 900px;
+    height: 500px;
+    background: #e2e0e1;
+    padding: 5px;
+    position: relative;
+    margin: 40px auto;
+}
+#iview .iviewSlider {
+    display: block;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+}
+.iview-controlNav {
+    position: absolute;
+    bottom: 30px;
+    left: 187px;
+    opacity: 1 !important;
+    margin-bottom: 10px;
+}
+.iview-controlNav a {
+    text-indent: -9999px;
+}
+a.iview-controlPrevNav {
+    height: 31px;
+    position: absolute;
+    left: -235px;
+    top: -270px;
+    width: 26px;
+    background: url(../../img/left-nav.png) no-repeat;
+}
+a.iview-controlNextNav {
+    height: 31px;
+    position: absolute;
+    right: -240px;
+    top: -270px;
+    width: 26px;
+    background: url(../../img/right-nav.png) no-repeat;
+}
+.iview-controlNav div.iview-items {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    height: 44px;
+    background: url(../../img/border-bg.png) repeat-x;
+    background-position: 0 21px;
+}
+.iview-controlNav a.iview-control {
+    padding: 0px;
+    float: left;
+    width: 18px;
+    height: 17px;
+    background: url(../../img/bullet-inactive.png) no-repeat;
+    line-height: 0px;
+    margin: 13px 3px 3px;
+}
+.iview-controlNav a.iview-control.active {
+    background: url(../../img/bullet-active.png) no-repeat;
+    width: 27px;
+    height: 26px;
+    margin: 8px 3px 3px;
+}
+.iview-caption {
+    color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+.iview-caption.caption1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+.iview-caption.caption-small {
+    font-size: 14px;
+    line-height: 26px;
+}
+.iview-caption.caption2 {
+    background: #e87e38;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: none;
+    text-transform: uppercase;
+    height: 35px;
+    padding: 5px;
+    line-height: 35px;
+}
+.iview-caption.caption3 {
+    background: #ff8383;
+    color: #fefefe;
+    font-size: 18px;
+    text-shadow: none;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.iview-caption.caption4 {
+    background: #854445;
+    color: #fff;
+    font-size: 22px;
+    text-shadow: none;
+    padding: 7px;
+    text-transform: uppercase;
+}
+.iview-caption.caption5 {
+    background: #e87e38;
+    /*box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;*/
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: none;
+    width: 255px;
+}
+.iview-caption.caption6 {
+    font-size: 18px;
+    width: 95px;
+}
+.iview-caption.caption7 {
+    text-align: left;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 0px;
+}
+.iview-caption.caption7 div {
+    line-height: 200%;
+}
+.iview-caption.caption7 h3 {
+    margin-bottom: 20px;
+    color: #FFF;
+}
+.iview-caption.blackcaption {
+    background: #000;
+    box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+    text-shadow: none;
+}
+#iview-preloader {
+    border: #666 1px solid;
+    width: 150px
+}
+#iview-preloader div {
+    background: #666;
+}
+.iview-controlNav div.iview-items ul li {
+    padding: 0px;
+    float: left;
+    height: 12px;
+    line-height: 0px;
+    margin: 0 70px 0 20px;
+}
+.iview-controlNav div.iview-items ul li:first-child {
+    margin-left: 10px;
+}
+.iview-controlNav div.iview-items ul li:last-child {
+    margin-right: 10px;
+}
+#iview #iview-tooltip {
+    display: none;
+    position: absolute;
+    background: url('../../img/tooltip.png') no-repeat;
+    width: 124px;
+    height: 90px;
+    bottom: 30px;
+    left: -67px;
+    padding: 10px;
+    z-index: 100;
+}
+#iview #iview-tooltip div.holder {
+    display: block;
+    width: 124px;
+    height: 84px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+#iview #iview-tooltip div.holder div.container {
+    display: block;
+    width: 4000px;
+}
+#iview #iview-tooltip div.holder div.container div {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 124px;
+    height: 84px;
+    left: -50%;
+    text-align: center;
+}
+#iview #iview-tooltip div.holder div.container div img {
+    height: 84px;
+    margin: 0 auto;
+}

@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="UDX">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>23 Sliders - Mega Pack</title>
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            var Page = (function() {
+
+                var $navArrows = $('#nav-arrows').hide(),
+                    $navDots = $('#nav-dots').hide(),
+                    $nav = $navDots.children('span'),
+                    $shadow = $('#shadow').hide(),
+                    slicebox = $('#sb-slider').slicebox({
+                        onReady: function() {
+
+                            $navArrows.show();
+                            $navDots.show();
+                            $shadow.show();
+
+                        },
+                        speed: 1300,
+                        interval: 4000,
+                        orientation: 'v',
+                        cuboidsCount: 7,
+                        autoplay: true,
+                        onBeforeChange: function(pos) {
+                            /*$('#nav-arrows').find('a.prev').animate({left:"25px"});*/
+                            /*$('#nav-arrows').find('span.lowerImg_l').css('z-index','3').animate({left:"43px",width:'49px'});
+								$('#nav-arrows').find('a.next').animate({right:"25px"});
+                                $('#nav-arrows').find('span.lowerImg_r').css('z-index','3').animate({right:"43px",width:'49px'});*/
+                            $nav.removeClass('nav-dot-current');
+                            $nav.eq(pos).addClass('nav-dot-current');
+                        },
+                        onAfterChange: function(pos) {
+                            /*$('#nav-arrows').find('a.next').animate({right:"47px"});*/
+
+                            /*$('#nav-arrows').find('span.container1 span.lowerImg_l').css('overflow','hidden').animate({left :"64px",width:'0px'},400);
+								$('#nav-arrows').find('a.prev').animate({left:"47px"});
+								$('#nav-arrows').find('span.container1 span.lowerImg_r').css('overflow','hidden').animate({right :"64px",width:'0px'},400);*/
+                        }
+                    }),
+
+                    init = function() {
+
+                        initEvents();
+
+                    },
+                    initEvents = function() {
+
+                        // add navigation events
+                        $navArrows.children(':first').on('click', function(event) {
+                            event.preventDefault();
+                            //$('#nav-arrows').find('a.prev').animate({left:"47px"});
+                            //$('#nav-arrows').find('span.container1 span.lowerImg_r').css('overflow','hidden').animate({right :"64px",width:'0px'},400);
+                            slicebox.next();
+                            return false;
+
+                        });
+
+                        $navArrows.children(':last').on('click', function(event) {
+                            //$('#nav-arrows').find('a.next').animate({right:"47px"});
+
+                            /// $('#nav-arrows').find('span.container1 span.lowerImg_l').css('overflow','hidden').animate({left :"64px",width:'0px'},400);
+                            event.preventDefault();
+                            slicebox.previous();
+                            return false;
+
+                        });
+
+                        $nav.each(function(i) {
+
+                            $(this).on('click', function(event) {
+                                event.preventDefault();
+                                var $dot = $(this);
+
+                                if (!slicebox.isActive()) {
+
+                                    $nav.removeClass('nav-dot-current');
+                                    $dot.addClass('nav-dot-current');
+
+                                }
+
+                                slicebox.jump(i + 1);
+                                return false;
+
+                            });
+
+                        });
+
+                    };
+
+                return {
+                    init: init
+                };
+
+            })();
+
+            Page.init();
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!--Wrapper-->
+    <div id="wrapper">
+        <div id="logo"><img src="images/logo.jpg" width="152" height="39" title="UDX" alt="UDX" />
+        </div>
+        <div style="clear:both"></div>
+
+        <!-- Title Wrapper -->
+        <div id="title_wrapper">
+
+            <!-- Page Title -->
+            <div class="page_title">3D Box Slider</div>
+            <!-- Page Title End -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- Title Wrapper End -->
+
+        <!-- Content Wrapper -->
+        <div id="content_wrapper">
+
+
+            <!--Plugin-->
+            <div class="wrapper">
+
+                <ul id="sb-slider" class="sb-slider">
+                    <li>
+                        <a href="#" target="_blank"><img src="images/1.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 1</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/2.jpg" alt="image2" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 2</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/3.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 3</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/4.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 4</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/5.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 5</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/6.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 6</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="images/7.jpg" alt="image1" />
+                        </a>
+                        <div class="sb-description">
+                            <h3>Title 7</h3>
+                            <div class="desc_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut est quis enim faucibus dignissim in vitae tellus. Etiam dignissim sodales massa.</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div id="shadow" class="shadow"></div>
+
+                <div id="nav-arrows" class="nav-arrows">
+                    <a class="next" href="#">Next</a>
+                    <span id="lowerImg_r" class="container1"> <span class="lowerImg_r"></span> </span>
+                    <span id="lowerImg_l" class="container1"><span id="lowerImg_r" class="lowerImg_l"></span></span>
+                    <a class="prev" href="#">Previous</a>
+                </div>
+
+                <div id="nav-dots" class="nav-dots">
+                    <span class="nav-dot-current"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+            <!--Plugin End-->
+
+        </div>
+        <!-- Content Wrapper End-->
+
+
+        <div class="clear"></div>
+    </div>
+    <!--Wrapper End-->
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* ==============================================================
+
+   Author: UDX
+   Author URL: http://codecanyon.net/user/UDX
+   Plugin: 23 Sliders - Mega Pack
+   Plugin URL: http://codecanyon.net/item/x/12482338
+   Version: 1.0
+
+   ============================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: Arial, Tahoma;
+    color: #333;
+    background: #823aa0;
+}
+img {
+    border: medium none;
+}
+#page {
+    margin: 0 auto;
+}
+#page h1 {
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: -2px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px 0;
+}
+#page h2 {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1px;
+    font-style: italic;
+    margin: 40px 0 0 0;
+}
+#page h3 {
+    float: right;
+}
+#page h3 a {
+    font-weight: normal;
+    font-size: 16px;
+    color: #004499;
+}
+#page h3 a:hover {
+    color: #333;
+}
+.title-box {
+    background: #eeeeee;
+    border-bottom: 2px solid #c7c7c7;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 70px;
+}
+.title-box h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    color: #303030;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 28px 0px 20px 0px;
+}
+.slider-container {
+    background: #E2E2E2;
+    border: 1px solid #722E8F;
+    padding: 10px;
+    width: 948px;
+    margin: 0 auto;
+}
+.slider-shadow {
+    background: url(../images/slider-shadow.png) center top no-repeat;
+    height: 34px;
+}
+#logo {
+    float: left;
+    width: 100%;
+    background: #303030;
+    text-align: center;
+}
+#logo img {
+    display: block;
+    margin: 10px 0 0 20px;
+}

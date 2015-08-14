@@ -1,0 +1,101 @@
+/* ==============================================================
+
+   Author: UDX
+   Author URL: http://codecanyon.net/user/UDX
+   Plugin: 23 Sliders - Mega Pack
+   Plugin URL: http://codecanyon.net/item/x/12482338
+   Version: 1.0
+
+   ============================================================== */
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 0 0 10px 0;
+}
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#wrapper {
+    width: 100%;
+    min-width: 980px;
+    clear: both;
+}
+#header_wrapper {
+    background: #303030;
+    padding: 14px 0 10px 0;
+}
+.container {
+    width: 90%;
+    max-width: 2000px;
+    min-width: 980px;
+    margin: 0 auto;
+}
+#logo {
+    float: left;
+    width: 100%;
+    background: #303030;
+    text-align: center;
+}
+#logo img {
+    display: block;
+    margin: 10px 0 0 20px;
+}
+.link {
+    font-size: 16px;
+    text-align: right;
+    float: right;
+    width: 150px;
+    line-height: 39px;
+    color: #a8a8a8;
+}
+.link a {
+    color: #a8a8a8;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.link a:hover {
+    color: #FFFFFF;
+}
+#title_wrapper {
+    height: 30px;
+    padding: 20px 0;
+    background: #eeeeee;
+}
+.page_title {
+    font-size: 24px;
+    color: #303030;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+#content_wrapper {
+    width: 100%;
+    clear: both;
+    padding: 70px 0;
+}

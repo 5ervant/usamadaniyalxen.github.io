@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="UDX">
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>23 Sliders - Mega Pack</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/iview.css" />
+    <link rel="stylesheet" href="css/skin 1/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+
+    <script src="js/iview.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#iview').iView({
+                pauseTime: 7000,
+                directionNav: false,
+                controlNav: true,
+                tooltipY: -15,
+                timer: "360Bar",
+                timerColor: '#f00',
+                timerStroke: 5,
+                timerDiameter: 50
+            });
+        });
+    </script>
+    <style>
+        .iview-controlNav {
+            bottom: -75px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cont">
+        <div id="logo"><img src="img/logo.jpg" width="152" height="39" title="UDX" alt="UDX" />
+        </div>
+        <div class="title-box">
+            <h2>Multi Content Slider with Tool Tip Navigation</h2>
+        </div>
+        <div class="container">
+            <div id="iview">
+                <div data-iview:image="Photos/slider-bg-1.png" data-iview:transition="block-expand,block-expand">
+                    <div class="iview-caption caption1" data-x="20" data-y="50" data-transition="wipeRight" data-width="340">
+                        Lorem Ipsum is simply dummy text
+                    </div>
+                    <div class="iview-caption caption1" data-x="20" data-y="70" data-transition="wipeRight" data-width="340">
+                        of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <div data-iview:image="Photos/slider-bg-2.png" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+                    <div class="iview-caption caption1" data-x="20" data-y="50" data-transition="wipeRight" data-width="340">
+                        Lorem Ipsum is simply dummy text
+                    </div>
+                    <div class="iview-caption caption1" data-x="20" data-y="70" data-transition="wipeRight" data-width="340">
+                        of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <div data-iview:image="Photos/slider-bg-3.png" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+                    <iframe src="http://www.youtube.com/embed/Nw4J23vMkXg" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">Video</div>
+                    <div class="iview-caption caption3" data-x="600" data-y="345" data-transition="wipeLeft">Support</div>
+                </div>
+
+                <div data-iview:image="Photos/slider-bg-4.png">
+                    <div class="iview-caption caption1" data-x="20" data-y="50" data-transition="wipeRight" data-width="340">
+                        Lorem Ipsum is simply dummy text
+                    </div>
+                    <div class="iview-caption caption1" data-x="20" data-y="70" data-transition="wipeRight" data-width="340">
+                        of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <div data-iview:image="Photos/slider-bg-5.png">
+                    <div class="iview-caption caption1" data-x="20" data-y="50" data-transition="wipeRight" data-width="340">
+                        Lorem Ipsum is simply dummy text
+                    </div>
+                    <div class="iview-caption caption1" data-x="20" data-y="70" data-transition="wipeRight" data-width="340">
+                        of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <div data-iview:image="Photos/slider-bg-6.png">
+                    <div class="iview-caption caption1" data-x="20" data-y="50" data-transition="wipeRight" data-width="340">
+                        Lorem Ipsum is simply dummy text
+                    </div>
+                    <div class="iview-caption caption1" data-x="20" data-y="70" data-transition="wipeRight" data-width="340">
+                        of the printing and typesetting industry.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="background-image">
+        <!--/*<img src="#" width="1820" height="1024" />*/-->
+    </div>
+    <script type="text/javascript" src="js/jquery.fullscreen.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //$("#background-image").fullscreenBackground();
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="UDX">
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>23 Sliders - Mega Pack</title>
+
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+    <style>
+        /* Demo Syles */
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.5;
+            background: #cb4d4e;
+        }
+        .device {
+            width: 872px;
+            padding: 56px 40px 60px;
+            background: url(img/ipad-bg.png) no-repeat;
+            margin: 5px auto;
+            position: relative;
+        }
+        .device .arrow-left {
+            background: url(img/arrows.png) no-repeat left top;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -15px;
+            width: 17px;
+            height: 30px;
+            display: none;
+        }
+        .device .arrow-right {
+            background: url(img/arrows.png) no-repeat left bottom;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -15px;
+            width: 17px;
+            height: 30px;
+            display: none;
+        }
+        .swiper-container {
+            height: 451px;
+            width: 799px;
+            border: 15px solid #CB4D4E;
+        }
+        .content-slide {
+            padding: 20px;
+            color: #fff;
+        }
+        .title {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .pagination {
+            position: absolute;
+            left: 0;
+            text-align: center;
+            bottom: -50px;
+            width: 100%;
+        }
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background: url(img/nav-bg.png) no-repeat;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        .swiper-active-switch {
+            background: url(img/nav-bg-active.png) no-repeat;
+        }
+        #logo {
+            float: left;
+            width: 100%;
+            background: #303030;
+            text-align: center;
+        }
+        #logo img {
+            display: block;
+            margin: 10px 0 0 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="logo"><img src="img/logo.jpg" width="152" height="39" title="UDX" alt="UDX" />
+    </div>
+    <div class="title-box">
+        <h2>Touch Slider</h2>
+    </div>
+    <div class="device">
+        <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="img/slider1-1.png" alt=""> </div>
+                <div class="swiper-slide swiper-slider2">
+                    <h2>Keep Swiping</h2>
+                </div>
+                <div class="swiper-slide swiper-slider3">
+                    <h2>Keep Swiping</h2>
+                </div>
+                <div class="swiper-slide swiper-slider4">
+                    <h2>End Of Slides</h2>
+                </div>
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/idangerous.swiper-2.0.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.pagination',
+            loop: true,
+            grabCursor: true,
+            paginationClickable: true
+        })
+        $('.arrow-left').on('click', function(e) {
+            e.preventDefault()
+            mySwiper.swipePrev()
+        })
+        $('.arrow-right').on('click', function(e) {
+            e.preventDefault()
+            mySwiper.swipeNext()
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="UDX">
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <title>23 Sliders - Mega Pack</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/iview.css" />
+    <link rel="stylesheet" href="css/skin 3/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/jquery.slideshowify.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/iview.js"></script>
+
+    <style>
+        .iview-controlNav {
+            position: relative;
+            bottom: -49px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('#iview').iView({
+                pauseTime: 7000,
+                pauseOnHover: true,
+                directionNav: false,
+                directionNavHide: false,
+                controlNav: true,
+                controlNavNextPrev: false,
+                controlNavThumbs: true,
+                timer: "Bar",
+                timerDiameter: 375,
+                timerPadding: 3,
+                timerStroke: 4,
+                timerBarStroke: 0,
+                timerColor: "#00ff80",
+                timerPosition: "bottom-right",
+                timerX: 15,
+                timerY: 60,
+                easing: 'easeInExpo'
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="cont">
+        <div id="logo"><img src="img/logo.jpg" width="152" height="39" title="UDX" alt="UDX" />
+        </div>
+        <div class="title-box">
+            <h2>Text Animated Slider</h2>
+        </div>
+        <div class="container" style="overflow:hidden;">
+            <div id="iview">
+                <div class="abc" data-iview:thumbnail="photos/photo1.jpg" data-iview:image="photos/photo1.jpg">
+                    <div class="iview-caption caption1" data-x="50" data-y="330" data-width="200" data-transition="block-expand">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="iview-caption caption2" data-x="50" data-y="366" data-width="165" data-transition="block-expand-reverse">
+                        consectetur adipiscing
+                    </div>
+                </div>
+
+                <div data-iview:thumbnail="photos/photo2.jpg" data-iview:image="photos/photo2.jpg" data-iview:transition="block-expand-random" data-iview:pausetime="2000">
+                    <div class="iview-caption caption3" data-x="50" data-y="150" data-transition="expandRight">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="iview-caption caption3" data-x="50" data-y="180" data-width="165" data-transition="expandRight">
+                        consectetur adipiscing
+                    </div>
+                </div>
+
+                <div data-iview:thumbnail="photos/photo3.jpg" data-iview:image="photos/photo3.jpg">
+                    <div class="iview-caption caption4" data-x="440" data-y="270" data-width="320" data-transition="expandLeft">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="iview-caption caption5" data-x="530" data-y="310" data-width="215" data-transition="expandLeft">
+                        consectetur adipiscing
+                    </div>
+                </div>
+
+                <div data-iview:image="photos/photo4.jpg" data-iview:type="video" data-iview:transition="block-drop-random">
+                    <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div id="background-image">
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery.fullscreen.js"></script>
+
+        <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#iview').css('overflow', 'hidden');
+                //$('.iviewSlider').animate({scale: '+=0.4'}, {queue: false, duration: 5000});
+                //$('.iviewSlider div').effect("scale", {percent:500}, 5000);
+
+
+
+            });
+        </script>
+
+</body>
+
+</html>
