@@ -1,42 +1,13 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.9">
-    <meta name="author" content="UDX">
-
-    <title>Parallax Runner - HTML5 Game</title>
-
-    <link rel="stylesheet" href="game.css" type="text/css" />
-
-    <script type="text/javascript" src="game.js"></script>
-
-</head>
-
-<body>
-
-    <div id="wrapper">
-        <div id="frame">
-            <div id="game"></div>
-        </div>
-        <!--
+<html> <head><meta charset=UTF-8><meta name=viewport content="width=device-width, user-scalable=no, initial-scale=0.9"><meta name=author content=UDX><title>Parallax Runner - HTML5 Game</title><Script Language='Javascript'>
+<!--
+document.write(unescape('%3C%6C%69%6E%6B%20%72%65%6C%3D%73%74%79%6C%65%73%68%65%65%74%20%68%72%65%66%3D%67%61%6D%65%2E%63%73%73%20%74%79%70%65%3D%74%65%78%74%2F%63%73%73%3E%3C%73%63%72%69%70%74%20%74%79%70%65%3D%74%65%78%74%2F%6A%61%76%61%73%63%72%69%70%74%20%73%72%63%3D%67%61%6D%65%2E%6A%73%3E%3C%2F%73%63%72%69%70%74%3E%3C%2F%68%65%61%64%3E%20'));
+//-->
+</Script><body> <div id=wrapper> <div id=frame> <div id=game></div> </div> <!--
     <a href="#" onclick="if (game.paused()) { game.start(); this.innerHTML = 'Pause'; } else { game.stop(); this.innerHTML = 'Continue'; }; return false;">Pause</a>
--->
-        <span id="score"><center><h3>Best: 0m</h3></center></span>
-        <center><a id="go" href="#" onclick="game.start();game.initialize(); return false;">Restart</a>
-        </center>
-
-    </div>
-    
-    <script type="text/javascript">
+--> <span id=score><center><h3>Best: 0m</h3></center></span> <center><a id=go href=# onclick="game.start();game.initialize(); return false;">Restart</a> </center> </div> <script type=text/javascript>
         if (!('ontouchstart' in window) || 1) document.body.style.paddingTop = "45px";
         var game = new Canabalt(document.getElementById('game'), {
             fps: 40
         }).start();
-    </script>
-
-</body>
-
-</html>
+    </script> </body> </html>
