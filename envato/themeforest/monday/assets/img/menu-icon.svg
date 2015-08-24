@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="28px" height="50px" viewBox="0 0 28 50" enable-background="new 0 0 28 50" xml:space="preserve">
+<g id="Layer_1_1_" display="none">
+	<path display="inline" fill="#1D1D1B" d="M1.685-9.415H25.27c0.931,0,1.686,0.755,1.686,1.685S26.2-6.045,25.27-6.045H1.685
+		C0.755-6.045,0-6.801,0-7.73C0-8.66,0.755-9.415,1.685-9.415z"/>
+	<path display="inline" fill="#1D1D1B" d="M1.685-0.992H25.27c0.931,0,1.686,0.755,1.686,1.685c0,0.93-0.755,1.685-1.686,1.685
+		H1.685C0.755,2.377,0,1.622,0,0.692C0-0.237,0.755-0.992,1.685-0.992z"/>
+	<path display="inline" fill="#1D1D1B" d="M1.685-17.838H25.27c0.931,0,1.686,0.755,1.686,1.685c0,0.93-0.755,1.685-1.686,1.685
+		H1.685C0.755-14.469,0-15.224,0-16.153C0-17.083,0.755-17.838,1.685-17.838z"/>
+	<path display="inline" fill="#1D1D1B" d="M2.241,27.598l19.61-19.61c0.771-0.773,2.023-0.773,2.799,0
+		c0.771,0.773,0.771,2.028,0,2.802L5.042,30.396c-0.771,0.773-2.025,0.773-2.801,0C1.467,29.623,1.467,28.37,2.241,27.598z"/>
+	<path display="inline" fill="#1D1D1B" d="M5.042,7.987L24.65,27.598c0.771,0.771,0.771,2.024,0,2.799
+		c-0.771,0.773-2.026,0.773-2.801,0L2.241,10.789c-0.773-0.773-0.773-2.029,0-2.802C3.014,7.214,4.269,7.214,5.042,7.987z"/>
+</g>
+<rect x="0.625" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="27.023" height="3.456"/>
+<rect x="0.625" y="8.64" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="27.023" height="3.456"/>
+<rect x="0.625" y="17.28" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="27.023" height="3.456"/>
+<polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="25.939,27.252 23.248,24.561 13.825,33.983 4.402,24.561 
+	1.708,27.254 11.132,36.677 1.711,46.099 4.402,48.789 13.823,39.368 23.246,48.791 25.939,46.098 16.517,36.675 "/>
+</svg>
