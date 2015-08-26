@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Shell Heroes</title>
+		<!--Include required scripts-->
+		<link href="css/main_desktop.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/game/lib/Easel.js"></script>
+		<script type="text/javascript" src="js/game/lib/Tween.js"></script>
+		<script type="text/javascript" src="js/game/lib/Ease.js"></script>
+		<script type="text/javascript" src="js/game/lib/Sound.js"></script>
+		<!-- include SM2 library -->
+		<script type="text/javascript" src="js/game/lib/sm2/script/soundmanager2-nodebug-jsmin.js"></script>
+	
+		<script type="text/javascript" src="js/game/lib/jquery.js"></script>
+		<script type="text/javascript" src="js/game/Config.js"></script>
+		<script type="text/javascript" src="js/game/lib/functions.js"></script>
+		<script type="text/javascript" src="js/game/Game.js"></script>
+		<script type="text/javascript" src="js/game/lib/TexturePackerUtils.js"></script>
+		<script type="text/javascript">
+		soundManager.url = 'js/game/lib/sm2/swf/';
+		function init(isDesktop){		
+			soundManager.onready(function(){
+				if(isDesktop){
+					Game.isDesktop=true;
+				}	
+				Game.init(document.getElementById('canvas'));
+			});
+		}
+		window.onerror = function(e,u,l){
+			$(function(){
+				var m = e+" on "+u+"-> [LINE "+l+"]";
+				$.get('e.php','m='+m);
+			});
+		}
+		</script>
+	</head>
+	<body onload="init(true)">
+		<table class="table_main">
+			<tr>
+				<td>
+					<div style="width: 160px;height: 600px;">
+				
+					</div>
+				</td>
+				<td id="centerTd">
+					<canvas id="canvas" style="margin: 0 auto;" width="650" height="550">
+						Your web browser is outdated. Update to play this game.
+					</canvas>
+					<div id="adBox" style="display:none">
+				<!---GOOGLE ADS-->
+				<!---GOOGLE ADS-->
+					</div>
+				</td>
+			
+			</tr>
+		</table>
+	</body>
+</html>
