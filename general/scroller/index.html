@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Scroller - A Portfolio Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="shortcut icon" href="" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet prefetch" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400italic,600italic,700italic,900italic,300,400,600,700,900'>
+    <link rel="stylesheet prefetch" href='http://fonts.googleapis.com/css?family=Press+Start+2P'>
+    <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+  </head>
+
+  <body>
+
+    <div id="loading">
+        <h1 class="letterize letterData">Loading</h1>
+    </div>
+
+    <div id="presentation">
+        <canvas id="canvas"></canvas>
+        <div id="soundSwitch" class="on">
+            <i class="fa fa-volume-down soundOn"></i>
+            <i class="fa fa-volume-off soundOff"></i>
+            <div class="bubble credits">
+                Sound design&nbsp;&nbsp;&nbsp;<span>Victoria Nine</span><br>
+                Music sample&nbsp;&nbsp;&nbsp;<span>Bj&ouml;rk - Undesired Constellations</span>
+            </div>
+        </div>
+        <div id="languageSwitch">
+            <a class="fr" href="">FR</a>
+            &nbsp;&nbsp;
+            <a class="en" href="">EN</a>
+        </div>
+        <div id="progressBar" data-progress=""></div>
+        <div id="scroll">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-chevron-down fa-stack-1x"></i>
+            </span>
+        </div>
+        <div id="content">
+            <section id="screen1" class="screen">
+                <h1 class="letterize">Hello</h1>
+            </section>
+            <section id="screen2" class="screen">
+                <h1 class="letterize">I'm Victoria Nine</h1>
+                <h2 class="glitch-text">Creative Developer + Designer</h2>
+            </section>
+            <section id="screen3" class="screen">
+                <h1 class="first">
+                    <span class="word">I love</span>
+                    <span class="word">solving</span>
+                    <br>
+                    <span class="word">all kinds of</span>
+                    <span class="word">problems</span>
+                </h1>
+                <h1 class="second">
+                    <span class="word glitch" data-text="Through">Through</span>
+                    <span class="word glitch" data-text="innovation">innovation</span>
+                </h1>
+            </section>
+            <section id="screen4" class="screen">
+                <div id="scene">
+                    <div id="cube">
+                        <div class="face front"></div>
+                        <div class="face back"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                        <div class="face left"></div>
+                        <div class="face right"></div>
+                    </div>
+                </div>
+                <h2 class="first glitch-text">Forming ideas</h2>
+                <h2 class="second letterize">And giving them shape</h2>
+            </section>
+            <section id="screen5" class="screen">
+                <h1 class="letterize">But most of all</h1>
+            </section>
+            <section id="screen6" class="screen">
+                <h1 class="letterize">Outdoing myself</h1>
+            </section>
+            <section id="screen7" class="screen">
+                <h1>Improving myself</h1>
+            </section>
+            <section id="screen8" class="screen">
+                <h1>And reaching<br>the next level</h1>
+            </section>
+            <section id="screen9" class="screen">
+                <h1 class="letterize">As a team</h1>
+                <div class="bubble question">Victoria wants to join your team. Accept?</div>
+            </section>
+            <section id="screen10" class="screen">
+                <h1 class="letterize">Thanks for scrolling!</h1>
+                <div id="bt_retry" class="bubble question">Try again?</div>
+            </section>
+            <div id="charasWrapper">
+                <div id="charas">
+                    <div class="bubble speech">Level up!</div>
+                    <div class="chara me"></div>
+                    <div class="chara npc1"></div>
+                    <div class="chara npc2"></div>
+                    <div class="chara npc3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div id="menu"><i class="fa fa-plus"></i></div>
+        <div class="container">
+            <h1>Victoria Nine</h1>
+            <h2 class="glitch-text">Creative Developer + Designer</h2>
+            <p>
+                After graduating from my HND Multimedia and Internet Careers degree and many hours<br>spent self-teaching, I studied at ISART Digital in Paris.<br /><br />Nowadays I spend my time pushing pixels between two lines of code, with a sensibility for UX design and interactivity.<br />I love building unique and memorable experiences... and I'd really love to create some with            </p>
+            <p>
+               <a href="#" target="_blank">Portfolio</a>
+               <span> / </span>
+               <a href="#" target="_blank">Envato</a>
+               <span> / </span>
+               <a href="#" target="_blank">GitHub</a>
+               <span> / </span>
+               <a href="#">Email</a>
+               <span> / </span>
+               <a href="#" target="_blank">Resume</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+    <script src="scripts/js/jquery.mousewheel.min.js"></script>
+    <script src="scripts/js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="scripts/js/modernizr.js"></script>
+    <script src="scripts/js/particles.js"></script>
+    <script src="scripts/js/audio.js"></script>
+    <script src="scripts/js/main.js"></script>
+
+  </body>
+
+</html>
